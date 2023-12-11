@@ -79,3 +79,98 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+
+
+
+.around {
+  animation-name: turn;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes turn {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+}
+
+.rotate {
+  animation-name: round;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes round {
+  from, to { transform: scale(1, 1); }
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+
+}
+
+.big {
+  animation-name: larger;
+  animation-duration  : 2.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes larger {
+  0% { transform: scale(1, 1); }
+  50% { transform: scale(3, 3); }
+  75% { transform: scale(5, 5); }
+  100% {transform: scale(10, 10) ;}
+
+}
+
+.change {
+animation-name: shifting;
+animation-duration: 15s;
+animation-iteration-count: 1;
+}
+
+@keyframes shifting {
+  0% {
+    background-color: #05161a;
+  }
+
+  25% {
+    background-color: #0c7075;
+  }
+  
+  50% {
+    background-color: #0f969c;
+  }
+  
+  100% {
+    background-color: #6da5c0;
+  }
+}
+
+.off {
+  animation-name: remove-border;
+  animation-duration: 5.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes remove-border {
+0% { border-radius: 1.5em}
+25% { border-radius: 1.3em}
+50% { border-radius: 0.8em}
+75% { border-radius: .1em}
+100% { border-radius: 1.5em}
+}
+
+.text {
+  animation-name: textmove;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+}
+
+@keyframes textmove {
+  0%{transform:translateX(0px);}
+  25% {transform:translateX(0px, 2em);}
+  50% {transform:translateX(0px, 5em);}
+  75% {transform:translateX(0px, 7em);}
+  100% {transform:translateX(0px, 10em);}
+}
