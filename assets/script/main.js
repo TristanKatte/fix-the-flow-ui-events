@@ -7,6 +7,7 @@ function jumpHandler() {
   interaction.classList.toggle('jump')
 }
 
+//1e animatie met pudding animatie
 let frontend = document.querySelector('a:nth-of-type(1)')
 
 frontend.addEventListener('click', Rotate)
@@ -16,6 +17,7 @@ function Rotate() {
   frontend.classList.toggle('around')
 }
 
+//2e animatie met pudding animatie
 let design = document.querySelector('a:nth-of-type(2)')
 
 design.addEventListener('dblclick', Around)
