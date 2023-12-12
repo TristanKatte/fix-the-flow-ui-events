@@ -174,3 +174,37 @@ animation-iteration-count: 1;
   75% {transform:translateX(0px, 7em);}
   100% {transform:translateX(0px, 10em);}
 }
+
+.swirl {
+  animation-name: swoosh;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	transform-origin: bottom;
+}
+
+@keyframes swoosh {
+  0%{transform:translateX(0px);}
+  25% {transform:translateX(0px, 2em);}
+  50% {transform:translateX(0px, 5em);}
+  75% {transform:translateX(0px, 7em);}
+  100% {transform:translateX(0px, 10em);}
+
+}
+
+.changing {
+  animation-name: recolor;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function:steps(6);
+}
+
+@keyframes recolor {
+0% {
+background-color: #7ce7c9;
+  }
+
+100% {
+    background-color: #011f16;
+  }
+}
