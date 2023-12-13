@@ -45,39 +45,85 @@ function Change() {
 }
 
 //5e animatie met animatie en keydown
-let sprint = document.querySelector('a:nth-of-type(5)')
+let sprint5 = document.querySelector('a:nth-of-type(5)')
 
-sprint.addEventListener('click', Outside)
+sprint5.addEventListener('click', Outside)
 
 function Outside() {
-  sprint.classList.toggle('off')
+  sprint5.classList.toggle('off')
 }
 
+//6e animatie
 let fix = document.querySelector('a:nth-of-type(6)')
 
-fix.addEventListener("keydown", MoveSomething, true);
 
-function moveSomething(e) {
-	switch(e.keyCode) {
-		case 37:
-			// left key pressed
-			break;
-      fix.classList.toggle('text')
+fix.addEventListener('dblclick', Away);
+
+function Away() {
+
+      fix.classList.toggle('fade')
 
 	}	
-}
+
 
 let the = document.querySelector('a:nth-of-type(7)');
 
-the.addEventListener('click', Whirl);
+the.addEventListener('keydown', Whirl);
+
 function Whirl() {
   the.classList.toggle('swirl')
 }
 
+//8e animatie met steps animatie
 let flow = document.querySelector('a:nth-of-type(8)');
 
 flow.addEventListener('click', Other);
 
 function Other() {
   flow.classList.toggle('changing')
+}
+
+//9e animatie
+let user = document.querySelector('a:nth-of-type(9)');
+
+user.addEventListener('mouseleave', Down);
+
+function Down() {
+  user.classList.toggle('sinking')
+}
+
+//10e knop
+let interface = document.querySelector('a:nth-of-type(10)');
+
+interface.addEventListener('keydown', jumpkey);
+
+function jumpkey() {
+  interface.classList.toggle('jumpy')
+}
+
+//11e knop
+let events = document.querySelector('a:nth-of-type(11)');
+
+events.addEventListener('keyup', Bomb);
+
+function Bomb() {
+  events.classList.toggle('explode')
+}
+
+//13e knop
+let userflow = document.querySelector('a:nth-of-type(13)');
+
+userflow.addEventListener('keypress', Heart);
+
+function Heart() {
+  userflow.classList.toggle('heart')
+}
+
+//14e knop
+let wireflow = document.querySelector('a:nth-of-type(14)');
+
+wireflow.addEventListener('click', Draai);
+
+function Draai() {
+  wireflow.classList.toggle('upside')
 }
